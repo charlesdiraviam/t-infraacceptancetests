@@ -1,8 +1,0 @@
-resource_group_name : "terraform-vm"
-location : "australiaeast"
-nsg_name : "TerraformNetworkSecurityGroup"
-vm_name : "secopschefvm"
-restrict_to_ip_range :  "220.233.56.29/32"
-ssh_public_key_path : "/home/cdiraviam/.ssh/lxc_id_rsa"
-vm_remote_port : 344
-vm_public_ip : "20.5.104.38"

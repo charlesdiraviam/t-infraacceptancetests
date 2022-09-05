@@ -6,6 +6,9 @@
 *.tfstate.*
 .terraform.lock.hcl
 
+# Ignore inspec variables
+**/input.yaml
+**/inspec.lock
 # Crash log files
 crash.log
 
