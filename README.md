@@ -64,3 +64,8 @@ inspec exec ./acceptance-tests --controls=azure-acceptance-tests --input-file ./
 inspec exec ./acceptance-tests --controls=vm-acceptance-tests --input-file ./acceptance-tests/input.yml -t ssh://azureuser@$vm_public_ip -i $ssh_id
 
 ```
+## References
+
+Utility to convert files between formats [ csv, json, HCL, yaml, toml ] [^1]
+
+[^1]: https://github.com/sclevine/yj
