@@ -1,0 +1,15 @@
+name: iac-acceptance-tests-template 
+title: Template acceptance tests for Azure IAC
+maintainer: secopschef
+copyright: secopschef
+copyright_email: secopschef@autopsec.dev
+license: Apache-2.0
+summary: An InSpec Acceptance test template Profile For Azure resources
+version: 0.1.0
+inspec_version: '>= 2.2.7'
+depends:
+- name: inspec-azure
+  url: https://github.com/inspec/inspec-azure/archive/main.tar.gz
+supports:
+- platform: azure
+- platform: ubuntu
