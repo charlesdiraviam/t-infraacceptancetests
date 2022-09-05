@@ -31,9 +31,12 @@ variable "ssh_public_key_path" {
 
 variable "restrict_to_ip_range" {
   type =  string
-  default = "220.233.56.29/32"
 }
 
+variable "remote_ssh_port" {
+  type =  string
+  default = "344"
+}
 variable "tags" {
   type = map(string)
 }

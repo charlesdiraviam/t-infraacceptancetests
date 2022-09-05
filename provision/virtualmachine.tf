@@ -41,7 +41,7 @@ resource "azurerm_network_security_group" "terraform_nsg" {
     access                     = "Allow"
     protocol                   = "Tcp"
     source_port_range          = "*"
-    destination_port_range     = "344"
+    destination_port_range     = var.remote_ssh_port
     source_address_prefix      = var.restrict_to_ip_range
     destination_address_prefix = format("%s/32",join(",", module.terraform-vm.network_interface_private_ip ))
   }
@@ -73,7 +73,7 @@ module "terraform-vm" {
   vm_os_simple                  = "UbuntuServer"
   public_ip_dns                 = [local.vm_public_dns]
   vnet_subnet_id                = module.vnet-main.vnet_subnets[0]
-  remote_port                   = "344" 
+  remote_port                   = var.remote_ssh_port
   source_address_prefixes       = [var.restrict_to_ip_range]
   admin_password                = random_password.terraform_vm.result
   enable_ssh_key                = true
