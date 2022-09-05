@@ -30,7 +30,7 @@ control "azure-acceptance-tests" do
     it { should exist }
     it { should_not allow_rdp_from_internet }
     it { should_not allow_ssh_from_internet }
-    it { should allow(source_ip_range: restrict_to_ip_range, destination_port: '344', protocol: 'TCP', direction: 'inbound') }
+    it { should allow(source_ip_range: restrict_to_ip_range, destination_port: vm_remote_port, protocol: 'TCP', direction: 'inbound') }
   end
 
   describe azure_storage_accounts(resource_group: resource_group_name ) do

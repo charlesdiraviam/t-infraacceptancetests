@@ -33,4 +33,4 @@ override.tf.json
 # example: *tfplan*
 
 # Ignore terraform variables
-**.tfvars
+**override.tfvars
