@@ -47,6 +47,7 @@ cat provision/terraform.tfvars provision/override.tfvars  | yj -cy > acceptance-
 ### Run acceptance tests for cloud resources
 
 We have two different validation controls
+
 - azure-acceptance-tests - for testing azure resources
 - vm-acceptance-tests - for testing virtual machine created 
 
