@@ -9,7 +9,6 @@ vm_name = input('vm_name')
 location = input('location')
 restrict_to_ip_range = input('restrict_to_ip_range')
 ssh_public_key_path = input('ssh_public_key_path')
-vm_public_ip = input('vm_public_ip')
 vm_remote_port = input('vm_remote_port')
 
 control "azure-acceptance-tests" do                            
