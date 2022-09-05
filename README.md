@@ -64,3 +64,17 @@ inspec exec ./acceptance-tests --controls=azure-acceptance-tests --input-file ./
 inspec exec ./acceptance-tests --controls=vm-acceptance-tests --input-file ./acceptance-tests/input.yml -t ssh://azureuser@$vm_public_ip -i $ssh_id
 
 ```
+## References
+
+- Utility to convert files between formats [ csv, json, HCL, yaml, toml ] [^1]
+
+- Chef inspec resources documentation [^2]
+
+- Inspec Azure resource pack code [^3]
+
+- If you are running inspec on your WSL, refer to this bug for issue related to vm-acceptance-tests [^4]
+
+[^1]: https://github.com/sclevine/yj
+[^2]: https://docs.chef.io/inspec/
+[^3]: https://github.com/inspec/inspec-azure#verify-properties-of-an-azure-virtual-machine
+[^4]: https://github.com/inspec/inspec/issues/4310
